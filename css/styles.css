@@ -202,6 +202,7 @@ section {
 }
 
 
+
 .btn {
   display: inline-block;
   padding: 0.75rem 1.5rem;
@@ -254,6 +255,12 @@ section {
   text-align: right;
 }
 
+.sub-confirmation {
+  margin-top: 20px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
 .location {
   display: block;
   margin-bottom: 10px;
@@ -298,3 +305,5 @@ section {
   line-height: 1.6;
   font-weight: 450;
 }
+
+
