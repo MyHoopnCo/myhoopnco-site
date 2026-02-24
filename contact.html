@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
   <title>MyHoop&Co</title>
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="icon" type="image/png" sizes="32x32" href="images/Logo_NoWords.png">
@@ -19,7 +18,6 @@
     <div class="nav-center">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
-      <a href="community.html">Community</a>
       <a href="contact.html">Contact</a>
     </div>
 
@@ -31,29 +29,33 @@
     <h1>Contact & Partnerships</h1>
   </header>
 
-  <section class="contact-form">
-    <p>Email us for partnerships or inquiries.</p>
-  </section>
+<section class="full-page-container">
+  <div class="cta-dual-content">
+    
+    <div class="cta-column">
+      <h2>Get In Touch</h2>
+      <p>Email us for partnerships or inquiries.</p>
+      <form class="cta-form-vertical">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <input type="text" placeholder="Subject">
+        <textarea placeholder="Your Message" rows="5"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
 
+    <div class="cta-column">
+      <h2>Stay Connected</h2>
+      <p>Get updates on events, drops, and community runs.</p>
+      <form class="cta-form-vertical">
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Join the Community</button>
+      </form>
+      <span class="cta-note">No spam. Just basketball news.</span>
+    </div>
 
-    <section class="cta">
-    <h2>Stay Connected</h2>
-    <p>Get updates on events, drops, and community runs.</p>
-
-    <form id="ctaForm" class="cta-form">
-      <input 
-        id="email"
-        type="email" 
-        placeholder="Enter your email" 
-        required
-      >
-      <button type="submit">Join the Community</button>
-    </form>
-
-    <div id="subConfirmation" class="sub-confirmation"></div>
-
-    <span class="cta-note">No spam. Just basketball news.</span>
-  </section>
+  </div>
+</section>
   
 
   <footer class="site-footer">
@@ -69,7 +71,6 @@
       <nav class="footer-nav">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
-        <a href="community.html">Events</a>
         <a href="contact.html">Contact</a>
       </nav>
 
@@ -77,7 +78,7 @@
       <div class="footer-social">
         <span class="location">Edmonton, AB</span>
 
-          <a href="https://instagram.com/myhoopnco" target="_blank" aria-label="Instagram" rel="noopener">
+          <a href="https://instagram.com/myhoopnco" target="_blank" aria-label="Instagram">
             <i class="fa-brands fa-instagram"></i>
           </a>
         </div>
