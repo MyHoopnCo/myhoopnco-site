@@ -306,4 +306,82 @@ section {
   font-weight: 450;
 }
 
+/* The main section container */
+.full-page-cta {
+  background: #383838; /* Your original color */
+  color: #fff; /* Your original color */
+  padding: 80px 20px; /* Generous padding to feel "full page" */
+  margin-top: 48px; /* Your original margin */
+  margin-bottom: 48px; /* Pushes the footer away */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Inner wrapper for side-by-side layout */
+.dual-form-wrapper {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  gap: 60px;
+}
+
+.form-side {
+  flex: 1;
+}
+
+/* Matching your original CTA font styles */
+.form-side h2 {
+  font-size: 2.2rem; /* Original H2 size */
+  font-weight: 800; /* Original H2 weight */
+  margin-bottom: 15px;
+  font-family: 'Anton', sans-serif;
+}
+
+.form-side p {
+  font-size: 1.1rem; /* Original P size */
+  margin-bottom: 30px;
+  opacity: 0.8;
+}
+
+/* Form Layout */
+.vertical-cta-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Matching your original input styles */
+.vertical-cta-form input, 
+.vertical-cta-form textarea {
+  padding: 15px 18px; /* Original padding */
+  font-size: 1rem; /* Original size */
+  border-radius: 8px; /* Original radius */
+  border: none;
+  width: 100%;
+}
+
+/* Matching your original orange button */
+.vertical-cta-form button {
+  padding: 15px 26px; /* Original padding */
+  font-size: 1rem;
+  font-weight: 700;
+  background: #ff6a00; /* Your original orange */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.vertical-cta-form button:hover {
+  opacity: 0.9;
+}
+
+.cta-note {
+  display: block;
+  margin-top: 15px;
+  font-size: 0.8rem;
+  opacity: 0.6;
+}
+
 
