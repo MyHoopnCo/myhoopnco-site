@@ -311,8 +311,8 @@ section {
   background: #383838; /* Your original color */
   color: #fff; /* Your original color */
   padding: 80px 20px; /* Generous padding to feel "full page" */
-  margin-top: 48px; /* Your original margin */
-  margin-bottom: 48px; /* Pushes the footer away */
+  margin-top: -65px; /* Your original margin */
+  margin-bottom: 85px; /* Pushes the footer away */
   width: 100%;
   display: flex;
   justify-content: center;
@@ -335,7 +335,6 @@ section {
   font-size: 2.2rem; /* Original H2 size */
   font-weight: 800; /* Original H2 weight */
   margin-bottom: 15px;
-  font-family: 'Anton', sans-serif;
 }
 
 .form-side p {
@@ -383,5 +382,6 @@ section {
   font-size: 0.8rem;
   opacity: 0.6;
 }
+
 
 
