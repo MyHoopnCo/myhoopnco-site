@@ -10,85 +10,128 @@ body {
   line-height: 1.6;
 }
 
-.navbar {
+.navbar{
+  width: 100%;
   height: 65px;
-  display: grid;
-  grid-template-columns: auto 1fr auto;
+  position: absolute;      /* overlays hero like Brodie */
+  top: 0;
+  left: 0;
+  z-index: 50;
+  background: rgba(255,255,255,0.70);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+/* Nav bar structure */
+.nav-inner{
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 64px;       
+  display: flex;
   align-items: center;
-  padding: 1rem 2rem;
-  border-bottom: 1px solid #ddd;
+  justify-content: space-between;
+  gap: 24px;
 }
 
-.nav-left {
-  justify-self: start;
-}
+/* Logo */
+.nav-left{ display:flex; align-items:center; }
 
-.nav-center {
-  justify-self: center;
+/* Links (aka butons) */
+.nav-center{
   display: flex;
   gap: 2rem;
+  align-items: center;
 }
 
-.nav-center a {
+.nav-center a{
   text-decoration: none;
   color: #000;
   font-weight: 500;
 }
 
-.logo {
-  height: 46px;
-  width: auto;
-  margin-top: -7px;
+/* empty spot for now on the right side, later on for a maybe implementation */
+.nav-right{
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
 }
 
-.hero {
+.logo{
+  height: 46px;
+  width: auto;
+  display: block;
+}
+
+.hero{
   position: relative;
-  width: 100%;
-  height: 100%;       /* makes it full viewport height */
+  height: 100vh;
   overflow: hidden;
 }
 
-/* Make image fill the header */
-.hero-img {
+/* background image */
+.hero-img{
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;   /* cover without distortion */
-  object-position: center; /* keeps image centered */
-  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* dark overlay ( aesthetic, removing it will make the picture in the header look brighter ) */
+.hero::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.55),
+    rgba(0,0,0,0.65)
+  );
   z-index: 1;
 }
 
-.hero-overlay {
+/* centered content block */
+.hero-content{
   position: absolute;
-  z-index: 2;            /* above background */
-  width: 300px;          /* adjust size */
+  z-index: 2;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1.03);
-  filter: drop-shadow(0 6px 20px rgba(0,0,0,0.27));
-
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+  width: min(1000px, 92%);
+  padding: 0 16px;
 }
 
-.hero h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 160%);
-  color: white;
-  text-align: center;
-  font-family: 'Anton', sans-serif;
-  font-size: 5.0rem;
+/* logo above text */
+.hero-logo{
+  width: 300px;
+  height: auto;
+  filter: drop-shadow(0 10px 24px rgba(0,0,0,0.35));
+}
+
+/* big headline */
+.hero-content h1{
+  margin: 0;
+  color: #fff;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(2.6rem, 6vw, 5.5rem);
   letter-spacing: 1px;
-  
+  line-height: 0.95;
 }
-.hero p {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 1285%) scale(1.05);
-  color: white;
-  text-align: center;
-  filter: drop-shadow(0 6px 20px rgba(0,0,0,0.5));
+
+/* Slogan */
+.hero-content p{
+  margin: 0;
+  color: rgba(255,255,255,0.92);
+  font-size: clamp(1rem, 1.8vw, 1.4rem);
+  font-weight: 600;
+  filter: drop-shadow(0 6px 18px rgba(0,0,0,0.45));
 }
 
 
