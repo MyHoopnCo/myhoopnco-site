@@ -426,5 +426,125 @@ section {
   opacity: 0.6;
 }
 
+.about-community {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ABOUT */
+.about-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 80px;
+}
+
+.about-header h2 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.about-copy p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.highlight {
+  font-weight: 800;
+}
+
+/* LOCATIONS */
+.locations {
+  background: #383838;
+  color: #fff;
+  padding: 40px;
+  margin-bottom: 80px;
+}
+
+.locations h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.locations ul {
+  list-style: none;
+  padding: 0;
+}
+
+.locations li {
+  font-size: 1.5rem;
+  font-weight: 800;
+  padding: 10px 0;
+  border-top: 1px solid #333;
+}
+
+/* COMMUNITY GRID */
+.community-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 100px;
+}
+
+.community-grid img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+/* TEAM */
+.team-section {
+  margin-bottom: 100px;
+}
+
+.team-section h3 {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.team-sub {
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.team-grid img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+/* IG PREVIEW */
+.ig-preview {
+  text-align: center;
+}
+
+.ig-preview h3 {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.ig-preview img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 16px;
+  margin-bottom: 150px;
+  border: 3px solid #10ad57;
+
+}
+
+
+
+
+
 
 
