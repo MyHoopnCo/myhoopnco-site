@@ -1,7 +1,7 @@
 const googleSheetsURL =
   "https://script.google.com/macros/s/AKfycbwXBm62VWog2tXTAidiv_hWTtTHTHbfeoBsnKEcB-NFCyBbbQJWbWWbbeGuCVAyxHYN/exec";
 
-const ctaForm = document.getElementById("ctaForm");
+const ctaForm = document.getElementById("ctaSubscribe");
 const message = document.getElementById("subConfirmation");
 
 ctaForm.addEventListener("submit", function (e) {
