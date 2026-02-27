@@ -42,11 +42,11 @@
     <div class="form-side">
       <h2>Get In Touch</h2>
       <p>Email us for partnerships or inquiries.</p>
-      <form class="vertical-cta-form">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <input type="text" placeholder="Subject">
-        <textarea placeholder="Your Message" rows="4"></textarea>
+      <form id="ctaContact" class="vertical-cta-form">
+        <input id="name" name="from_name" type="text" placeholder="Your Name" required>
+        <input id="emailv2" name="reply_to" type="email" placeholder="Your Email" required>
+        <input id="subject" name="subject" type="text" placeholder="Subject">
+        <textarea id="message" name="message" placeholder="Your Message" rows="4"></textarea>
         <button type="submit">Send Message</button>
       </form>
     </div>
@@ -94,6 +94,9 @@
 
     </div>
   </footer>
+
+  <script src="js/subscribe.js"></script>
+  <script src="js/contactForm.js"></script>
 
 </body>
 </html>
