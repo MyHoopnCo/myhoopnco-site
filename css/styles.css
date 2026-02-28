@@ -322,32 +322,6 @@ section {
   opacity: 0.8;
 }
 
-/* About */
-
-.about-story {
-  display: flex;
-  align-items: center; /* vertically centers text with image */
-  gap: 40px;           /* space between image and text */
-  padding: 60px 20px;
-}
-
-.split-image img {
-  width: 100%;
-  max-width: 400px;   /* adjust as needed */
- 
-}
-
-.split-text h2 {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 15px;
-}
-
-.split-text p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  font-weight: 450;
-}
 
 /* The main section container */
 .full-page-cta {
@@ -430,6 +404,7 @@ section {
   padding: 80px 20px;
   max-width: 1200px;
   margin: 0 auto;
+  margin-top: -250px;
 }
 
 /* ABOUT */
@@ -541,6 +516,7 @@ section {
   border: 3px solid #10ad57;
 
 }
+
 
 
 
