@@ -328,7 +328,7 @@ section {
   background: #383838; /* Your original color */
   color: #fff; /* Your original color */
   padding: 80px 20px; /* Generous padding to feel "full page" */
-  margin-top: -65px; /* Your original margin */
+  margin-top: -70px; /* Your original margin */
   margin-bottom: 85px; /* Pushes the footer away */
   width: 100%;
   display: flex;
@@ -523,6 +523,7 @@ section {
   border: 3px solid #10ad57;
 
 }
+
 
 
 
