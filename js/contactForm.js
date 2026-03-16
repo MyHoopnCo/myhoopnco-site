@@ -1,5 +1,3 @@
-import emailjs from 'emailjs-com';
-
 import emailjs from "emailjs-com";
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -22,10 +20,10 @@ document.addEventListener("DOMContentLoaded", () => {
       button.textContent = "Sending...";
 
       await emailjs.sendForm(
-        "YOUR_SERVICE_ID",   // e.g. service_abc123
-        "YOUR_TEMPLATE_ID",  // e.g. template_xyz456
+        "service_wgjhcpq",  
+        "PUT_TEMPLATE_ID_HERE", // <<<<<<<<<<< Bryan this line  
         form,
-        "YOUR_PUBLIC_KEY"    // from EmailJS dashboard
+        "BvRPgNERoAaK1nVrK"    
       );
 
       confirmation.textContent = "Message sent successfully! We'll be in touch.";
